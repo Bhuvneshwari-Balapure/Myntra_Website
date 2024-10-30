@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  color: rgb(101, 101, 101);
+}
+.navbar ul li:hover {
+  color: rgb(9, 99, 9);
+  border-bottom: 1px solid green;
+  cursor: pointer;
+}
+.navbar .text {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: rgb(113, 113, 113);
+}
+.navbar .text .box {
+  background-color: skyblue;
+  text-align: center;
+  padding: 5px;
+}
+
+hr {
+  border: 1px solid rgb(240, 240, 240);
+}
+
+/* ---------------------------------  section one ------------------------------- */
+.one {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: start;
+  gap: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+}
+.one .left, .one .right .right_2, .one .right, .one .right .right_1, .one .right .left_2, .one .left .left_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 5px;
+  margin: 30px 0px;
+}
+.one .left .left_1, .one .right .left_1, .one .left .left_3, .one .right .left_3 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 226, 231);
+  padding: 20px 20px;
+  border: 1px solid rgb(207, 206, 206);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.one .left .left_1 a, .one .right .left_1 a, .one .left .left_3 a, .one .right .left_3 a {
+  text-decoration: none;
+  color: rgb(224, 60, 88);
+  border: 1px solid rgb(204, 55, 80);
+  padding: 8px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.one .left .left_1 a:hover, .one .right .left_1 a:hover, .one .left .left_3 a:hover, .one .right .left_3 a:hover {
+  background-color: white;
+}
+.one .left .left_2, .one .right .left_2 {
+  gap: 20px;
+  padding: 20px 20px;
+  border: 1px solid rgb(207, 206, 206);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.one .left .left_2 h4, .one .right .left_2 h4, .one .left .left_2 a, .one .right .left_2 a, .one .left .left_2 p, .one .right .left_2 p {
+  font-size: 18px;
+}
+.one .left .left_2 p, .one .right .left_2 p {
+  font-size: 14px;
+  margin: 0px 10px;
+}
+.one .left .left_2 a, .one .right .left_2 a {
+  text-decoration: none;
+  color: rgb(207, 51, 77);
+  margin: 0px 10px;
+}
+.one .left .left_3, .one .right .left_3 {
+  background-color: white;
+  border: none;
+  gap: 20px;
+}
+.one .left .left_3 .box, .one .right .left_3 .box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.one .left .left_3 .box p, .one .right .left_3 .box p {
+  color: black;
+  font-size: 16px;
+}
+.one .left .left_3 .box i, .one .right .left_3 .box i {
+  color: white;
+  background-color: rgb(241, 48, 80);
+  padding: 4px;
+}
+.one .left .left_3 p, .one .right .left_3 p {
+  color: rgb(117, 117, 117);
+  font-size: 13px;
+}
+.one .left .left_4, .one .right .right_2 .left_4, .one .right .right_2 .left_2 .left_4, .one .right .left_4, .one .right .right_1 .left_4, .one .right .right_1 .right_1 .left_4, .one .right .left_2 .left_4, .one .right .right_1 .left_2 .left_4 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px auto;
+  gap: 0px;
+  padding: 20px 20px;
+  border: 1px solid rgb(207, 206, 206);
+}
+.one .left .left_4 .text, .one .right .right_2 .left_4 .text, .one .right .left_4 .text, .one .right .right_1 .left_4 .text, .one .right .left_2 .left_4 .text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+}
+.one .left .left_4 .text i, .one .right .right_2 .left_4 .text i, .one .right .left_4 .text i, .one .right .right_1 .left_4 .text i, .one .right .left_2 .left_4 .text i {
+  cursor: pointer;
+}
+.one .left .left_4 .text .cross, .one .right .left_4 .text .cross, .one .left .left_4 .text .size, .one .right .left_4 .text .size, .one .left .left_4 .text .size div, .one .right .left_4 .text .size div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.one .left .left_4 .text .lifestyle, .one .right .left_4 .text .lifestyle {
+  font-size: 14px;
+}
+.one .left .left_4 .text .lifestyle p, .one .right .left_4 .text .lifestyle p {
+  color: rgb(81, 81, 81);
+}
+.one .left .left_4 .text .lifestyle span, .one .right .left_4 .text .lifestyle span {
+  color: gray;
+  font-size: 13px;
+}
+.one .left .left_4 .text .size, .one .right .left_4 .text .size, .one .left .left_4 .text .size div, .one .right .left_4 .text .size div {
+  justify-content: start;
+  gap: 30px;
+  text-align: center;
+}
+.one .left .left_4 .text .size div, .one .right .left_4 .text .size div {
+  height: 30px;
+  width: 80px;
+  padding: 5px 5px;
+  gap: 7px;
+  background-color: rgb(228, 227, 227);
+}
+.one .left .left_4 .text .off, .one .right .left_4 .text .off {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 5px;
+}
+.one .left .left_4 .text .off p, .one .right .left_4 .text .off p,
+.one .left .left_4 .text .off i,
+.one .right .left_4 .text .off i {
+  font-size: 15px;
+}
+.one .left .left_4 .text .off p span, .one .right .left_4 .text .off p span,
+.one .left .left_4 .text .off i span,
+.one .right .left_4 .text .off i span {
+  color: rgb(240, 63, 93);
+}
+.one .left .left_4 .text .off .return, .one .right .left_4 .text .off .return {
+  color: black;
+  font-size: 13px;
+}
+.one .left .left_4 .text .off .return span, .one .right .left_4 .text .off .return span {
+  color: rgb(119, 119, 119);
+}
+.one .vertical-hr {
+  width: 1px;
+  height: 100%;
+  background-color: rgb(211, 210, 210);
+  border: none;
+}
+.one .right .right_1 p {
+  font-size: 14px;
+  font-weight: bold;
+}
+.one .right .right_1 .apply {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.one .right .right_1 .apply a {
+  text-decoration: none;
+  color: rgb(224, 60, 88);
+  border: 1px solid rgb(204, 55, 80);
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+  width: 80px;
+}
+.one .right .right_1 .login {
+  color: gray;
+  margin: 10px 20px;
+}
+.one .right .right_1 .login a {
+  color: rgb(215, 59, 85);
+  text-decoration: none;
+}
+.one .right .right_2 {
+  gap: 25px;
+}
+.one .right .right_2 p {
+  color: rgb(98, 98, 98);
+  font-size: 14px;
+}
+.one .right .right_2 .checkbox, .one .right .right_2 .price .price_box, .one .right .right_2 .price {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.one .right .right_2 .price .price_box {
+  justify-content: center;
+  gap: 0px;
+  border: 1px solid gray;
+  height: 30px;
+  width: 50px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.one .right .right_2 .price .price_box i {
+  font-size: 12px;
+}
+.one .right .right_2 a {
+  color: rgb(215, 59, 85);
+  text-decoration: none;
+}
+.one .right .right_3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+}
+.one .right .right_3 .detail {
+  font-size: 14px;
+  color: rgb(77, 77, 77);
+}
+.one .right .right_3 div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(125, 124, 124);
+  font-size: 14px;
+}
+.one .right .right_3 .green {
+  color: rgb(33, 208, 33);
+}
+.one .right .right_3 .pink {
+  color: rgb(240, 133, 151);
+}
+.one .right .right_3 span {
+  color: rgb(199, 56, 80);
+}
+.one .right .total {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+.one .right .order {
+  width: 100%;
+  text-decoration: none;
+  color: rgb(224, 60, 88);
+  border: 1px solid rgb(204, 55, 80);
+  padding: 8px;
+  text-align: center;
+  background-color: rgb(217, 53, 81);
+  color: white;
+}
+.one .right .order:hover {
+  background-color: rgb(235, 155, 168);
+  color: rgb(205, 47, 73);
+}
+
+.footer, .footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 10px 0px;
+}
+.footer div {
+  justify-content: center;
+  gap: 20px;
+  margin: 0px;
+}
+.footer .footer_1 i {
+  color: rgb(103, 102, 102);
+}
+.footer .footer_1 p {
+  font-size: 13px;
+  color: rgb(206, 43, 70);
+}
+.footer .footer_2 img {
+  padding: 3px;
+  border: 1px solid rgb(179, 178, 178);
+}
+.footer .footer_3, .footer .footer_3 a {
+  font-size: 14px;
+  color: rgb(85, 85, 85);
+}
+.footer .footer_3 a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 770px) {
+  body .one {
+    margin: 0px 30px;
+    grid-template-columns: auto;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 426px) {
+  .one {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width: 430px) {
+  header .navbar ul li,
+  header .navbar .text {
+    font-size: 12px;
+  }
+  body header .one {
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+  .footer, .footer div {
+    flex-direction: column;
+  }
+  .footer div {
+    flex-direction: row;
+  }
+  .footer .footer_2 {
+    order: 3;
+  }
+  .footer .footer_2 img {
+    width: 30px;
+    height: 30px;
+  }
+}/*# sourceMappingURL=checkout.css.map */

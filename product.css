@@ -1,0 +1,468 @@
+/*------------------------------ Product.html ---------------------------------------- */
+
+
+.section_one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  margin: 10px 30px;
+  gap: 20px;
+}
+.section_one ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.section_one ul li a {
+  text-decoration: none;
+  color: rgb(113, 113, 113);
+  margin-right: 10px;
+  font-size: 15px;
+}
+.section_one ul li a:hover
+{
+  color: black;
+}
+.section_one .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.section_one .bottom ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+#popularity {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid gray;
+}
+.product_center {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.vertical-hr {
+  width: 1px;
+  height: 100%;
+  background-color: rgb(211, 210, 210);
+  border: none;
+}
+.product_center .product_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 85%;
+  padding: 10px 30px;
+}
+.product_center .product_left .left_p {
+  font-size: 18px;
+  margin: 10px 0px;
+}
+.product_center .product_left .one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.product_center .product_left .first {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+}
+.product_center .product_left .first .left_first {
+  color: red;
+}
+.product_center .product_left .first div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.product_center .product_left .first a {
+  text-decoration: none;
+}
+.green {
+  background-color: green;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.Pink {
+  background-color: rgb(220, 38, 68);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.Blue {
+  background-color: blue;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.Red {
+  background-color: red;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.yellow {
+  background-color: yellow;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.Black {
+  background-color: black;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.Grey {
+  background-color: gray;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+/* product right cards */
+.product_right
+{
+  height: full;
+  width: full;
+}
+.product_right .right_cards .card {
+  gap: 5px;
+}
+.product_right .right_cards .card .stars {
+  color: rgb(40, 40, 187);
+}
+.product_right .right_cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  /* grid-template-rows: auto auto auto auto auto auto; */
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: auto;
+  margin: 20px 10px;
+}
+
+
+
+
+
+/* media querry for tablet ipads portrait mode */
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+  .section_one .bottom ul li a
+  {
+    font-size: 10px;
+    
+  }
+  .section_one .bottom ul 
+  {
+    gap: 5px;
+  }
+  .product_center .product_right .right_cards
+  {
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    
+  }
+  .product_center .product_right .right_cards .card img
+  {
+    width: 150px;
+    height: 150px;
+  }
+  .product_center .product_left {
+    gap: 8px;
+    padding: 3px 10px;
+    height: 70%;
+    flex-wrap: wrap;
+  }
+  .product_center .product_left .left_p
+  {
+    font-size: 15px;
+    margin: 5px 0px;
+  }
+
+}
+
+
+
+/* media querry for low resolution tablet ipads */
+@media screen and (min-width: 425px) and (max-width: 767px)
+{
+  .section_one .bottom ul li a
+  {
+    font-size: 10px;
+    
+  }
+  .section_one .bottom ul 
+  {
+    gap: 5px;
+  }
+  .product_center .product_right .right_cards
+  {
+    grid-template-columns: auto auto;
+    gap: 20px;
+    
+  }
+  .product_center .product_right .right_cards .card img
+  {
+    width: 150px;
+    height: 150px;
+  }
+  .product_center .product_left {
+    gap: 8px;
+    padding: 3px 10px;
+    height: 70%;
+    flex-wrap: wrap;
+  }
+  .product_center .product_left .left_p
+  {
+    font-size: 15px;
+    margin: 5px 0px;
+  }
+
+}
+
+
+/* media querry for low resolution tablet ipads */
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+  .section_one .bottom ul li a
+  {
+    font-size: 10px;
+    
+  }
+  .section_one .bottom ul 
+  {
+    gap: 5px;
+  }
+  .product_center .product_right .right_cards
+  {
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    
+  }
+  .product_center .product_right .right_cards .card img
+  {
+    width: 150px;
+    height: 150px;
+  }
+  .product_center .product_left {
+    gap: 8px;
+    padding: 3px 10px;
+    height: 70%;
+    flex-wrap: wrap;
+  }
+  .product_center .product_left .left_p
+  {
+    font-size: 15px;
+    margin: 5px 0px;
+  }
+
+}
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1440px)
+{
+  .section_one .bottom ul li a
+  {
+    font-size: 20px;
+    
+  }
+  .section_one .bottom ul 
+  {
+    gap: 5px;
+  }
+  .product_center .product_right .right_cards
+  {
+    grid-template-columns: auto auto auto auto ;
+    gap:8px;
+    
+  }
+  .product_center .product_right .right_cards .card img
+  {
+    width: 180px;
+    height: 180px;
+  }
+  .product_center .product_left {
+    gap: 8px;
+    padding: 2px 5px;
+    height: 85%;
+    flex-wrap: wrap;
+  }
+  .product_center .product_left .left_p
+  {
+    font-size: 18px;
+    margin: 5px 0px;
+  }
+
+}
+
+
+/* media querry for mobile divices */
+@media screen and (max-width: 480px)
+{
+  .section_one .bottom ul li a
+  {
+    font-size: 8px;
+    
+  }
+  .section_one .bottom ul 
+  {
+    gap: 2px;
+    flex-direction: column;
+
+  }
+  .product_center .product_right .right_cards
+  {
+    grid-template-columns: auto;
+    gap: 8px;
+    
+  }
+  #popularity
+  {
+    padding: 5px;
+    width: 160px;
+  }
+  .product_center .product_right .right_cards .card img
+  {
+    width: 150px;
+    height: 150px;
+  }
+  .product_center .product_left {
+    gap: 5px;
+    padding: 1px 10px;
+    height: 25%;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .product_center .product_left .left_p
+  {
+    font-size: 15px;
+    margin: 5px 0px;
+  }
+  .section_one ul {
+    flex-direction: column;
+  }
+
+}
+@media screen and (max-width: 376px)
+{
+  .section_one .bottom ul li a
+  {
+    font-size: 8px;
+    
+  }
+  .section_one .bottom ul 
+  {
+    gap: 2px;
+    flex-direction: column;
+
+  }
+  .product_center .product_right .right_cards
+  {
+    grid-template-columns: auto;
+    gap: 8px;
+    margin: 10px 0px;
+  }
+  #popularity
+  {
+    padding: 5px;
+    width: 160px;
+  }
+  .product_center .product_right .right_cards .card img
+  {
+    width: 150px;
+    height: 150px;
+  }
+  .product_center .product_left {
+    gap: 5px;
+    padding: 1px 10px;
+    height: 25%;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .product_center .product_left .left_p
+  {
+    font-size: 15px;
+    margin: 5px 0px;
+  }
+}
+
+
+@media screen and (max-width: 376px) and (min-width:320px)
+{
+  .section_one ul li a
+  {
+    font-size: 10px;
+  }
+  .section_one .bottom ul li a
+  {
+    font-size: 8px;
+    
+  }
+  .section_one .bottom ul 
+  {
+    gap: 5px;
+    flex-direction: column;
+
+  }
+  .product_center .product_right .right_cards
+  {
+    grid-template-columns: auto;
+    gap: 5px;
+    margin: 5px 0px;
+  }
+  #popularity
+  {
+    padding: 3px;
+    width: 100px;
+  }
+  .product_center
+  {
+    grid-template-columns: 40% auto;
+  }
+  .product_center .product_right .right_cards .card img
+  {
+    width: 150px;
+    height: 120px;
+  }
+  .product_center .product_left {
+    gap: 5px;
+    padding: 1px 10px;
+    height: 40%;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .product_center .product_left .left_p
+  {
+    font-size: 15px;
+    margin: 5px 0px;
+  }
+  .section_one ul {
+    flex-direction: column;
+  }
+}
